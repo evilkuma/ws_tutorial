@@ -1,0 +1,38 @@
+{
+  "name": "ws_tutorial",
+  "version": "1.0.0",
+  "description": "tutorial by websocket on node.js with ws",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run server\" \"npm run dev\"",
+    "server": "node server/main.js",
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evilkuma/ws_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evilkuma/ws_tutorial/issues"
+  },
+  "homepage": "https://github.com/evilkuma/ws_tutorial#readme",
+  "dependencies": {
+    "webpack": "^4.30.0",
+    "ws": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "concurrently": "^4.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "vue": "^2.6.10",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
